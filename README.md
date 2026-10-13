@@ -1,6 +1,6 @@
 # Tessera — Churn Early Warning Graph
 
-Tessera is a Customer Success workspace for the fictional **PT KasirNusa Teknologi** case in Hackathon PENS 2026. It compiles customer signals that normally live in disconnected CRM, billing, support, usage, interaction, employment, and decision records into one context graph, then helps an Account Manager decide **which account needs attention first, why, and what to do next**.
+Tessera is a Customer Success workspace for the fictional **PT KasirNusa Teknologi** case. It compiles customer signals that normally live in disconnected CRM, billing, support, usage, interaction, employment, and decision records into one context graph, then helps an Account Manager decide **which account needs attention first, why, and what to do next**.
 
 **Live demo:** https://tessera.kandu.kr  
 The login page displays the demo-access note for reviewers. No credential is stored in this repository.
@@ -133,7 +133,7 @@ Jev also routes an Ask-the-Graph question to one of ten supported intents. Code 
 
 This follows the principle of **selective classification**: the model may abstain instead of turning uncertainty into a false fact. The final priority score and every account action remain deterministic and human-controlled. Tessera does not claim that its score is a calibrated churn probability.
 
-The live Data page reports 346 persisted Jev calls, 221,732 input tokens, 42,904 output tokens, and 0 errors for the final hackathon build.
+The live Data page reports 346 persisted Jev calls, 221,732 input tokens, 42,904 output tokens, and 0 errors for the final build.
 
 ## Evidence rules
 
@@ -147,7 +147,7 @@ This distinction is part of the product, not an implementation footnote.
 
 ## Dataset
 
-The committee-provided dummy dataset contains 15 source files, operational history from 1 October 2025 to 30 September 2026, and a business snapshot dated 1 October 2026.
+The provided dummy dataset contains 15 source files, operational history from 1 October 2025 to 30 September 2026, and a business snapshot dated 1 October 2026.
 
 | Source | Records |
 |---|---:|
@@ -167,13 +167,13 @@ The committee-provided dummy dataset contains 15 source files, operational histo
 | `releases` | 3 |
 | `features` | 8 |
 
-The compiled live graph contains account, contract, contact, interaction, ticket, outlet, deal, employee, feature, bug, release, and decision nodes, with **4,140 active edges** and **5 review edges** in the final hackathon build.
+The compiled live graph contains account, contract, contact, interaction, ticket, outlet, deal, employee, feature, bug, release, and decision nodes, with **4,140 active edges** and **5 review edges** in the final build.
 
 A read-only Google Sheets copy of the raw dataset is available here:
 
 https://drive.google.com/drive/folders/1Bo30bbXnWnNNJSRYHtAg6CQujvikgoHF
 
-The dataset directory itself is intentionally ignored by Git. Place the committee-provided `dataset_kasirnusa/` directory locally before running ingest; do not commit customer data or secrets.
+The dataset directory itself is intentionally ignored by Git. Place the provided `dataset_kasirnusa/` directory locally before running ingest; do not commit customer data or secrets.
 
 ## Technology
 
@@ -267,7 +267,7 @@ Database-backed workspace and full-dataset integration checks require disposable
 
 ## Limitations
 
-- The KasirNusa data is fictional committee data, not production customer data.
+- The KasirNusa data is fictional sample data, not production customer data.
 - The portfolio contains no reliable churn-outcome labels, so the priority score is a transparent heuristic—not a trained or calibrated churn model.
 - The primitive-specific Jev signal thresholds and the Ask-the-Graph router thresholds are operating policies, not learned optima. They should be recalibrated from recorded human decisions.
 - Derived graph connections are hypotheses until a human verifies them.
@@ -290,4 +290,3 @@ Another immediate follow-up is the cross-track connection in C01: the former cha
 
 Advisor: **Aji Seto Arifianto**
 
-Built for Hackathon PENS 2026, Context Graphs in Customer Success and Sales track.
