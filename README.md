@@ -2,9 +2,6 @@
 
 Tessera is a Customer Success workspace for the fictional **PT KasirNusa Teknologi** case. It compiles customer signals that normally live in disconnected CRM, billing, support, usage, interaction, employment, and decision records into one context graph, then helps an Account Manager decide **which account needs attention first, why, and what to do next**.
 
-**Live demo:** https://tessera.kandu.kr  
-The login page displays the demo-access note for reviewers. No credential is stored in this repository.
-
 ## Why Tessera exists
 
 A conventional account dashboard can say an account is healthy while the relationship is already deteriorating. Tessera looks for the combination of signals that a single dashboard misses:
